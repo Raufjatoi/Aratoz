@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aratoz - Modern Solutions</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'non-photo-blue': '#93D8EF',
+                        'sea-serpent': '#46CEEB',
+                        'bubbles': '#E9FCFF',
+                        'seaweed': '#1A8499',
+                        'midnight': '#005764',
+                        'eerie-black': '#1F1F1F'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+.gradient-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.stripe {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  transform: rotate(45deg);
+  animation: stripeMove 8s linear infinite alternate;
+}
+
+.stripe1 {
+  background-color: #00bfcf; /* lightest from logo */
+  top: -50%;
+  left: -50%;
+  animation-delay: 0s;
+}
+
+.stripe2 {
+  background-color: #00a5b8; /* second layer */
+  top: -40%;
+  left: -40%;
+  animation-delay: 2s;
+}
+
+.stripe3 {
+  background-color: #008b9f; /* third layer */
+  top: -30%;
+  left: -30%;
+  animation-delay: 4s;
+}
+
+.stripe4 {
+  background-color: #007282; /* darkest layer */
+  top: -20%;
+  left: -20%;
+  animation-delay: 6s;
+}
+
+@keyframes stripeMove {
+  0% { transform: rotate(45deg) translateX(0); }
+  100% { transform: rotate(45deg) translateX(30px); }
+}
+
+        .gradient-bg-alt {
+            background: linear-gradient(45deg, #E9FCFF 0%, #93D8EF 50%, #46CEEB 100%);
+        }
+        .gradient-bg-dark {
+            background: linear-gradient(135deg, #005764 0%, #1A8499 50%, #1F1F1F 100%);
+        }
+        .aratoz-logo {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 35px solid #46CEEB;
+            position: relative;
+            transform: rotate(180deg);
+        }
+        .aratoz-logo::before {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: -15px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 25px solid #1A8499;
+        }
+        .aratoz-logo::after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid #005764;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+<!-- Glassy Navbar -->
+<nav class="fixed w-full z-50 bg-white/10 backdrop-blur-lg border-b border-white/20 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            
+            <!-- Brand -->
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Aratoz Logo" class="w-8 h-8">
+                <span class="text-2xl font-bold text-midnight">Aratoz</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-midnight hover:text-sea-serpent transition-colors">Home</a>
+                <a href="#services" class="text-midnight hover:text-sea-serpent transition-colors">Services</a>
+                <a href="#packages" class="text-midnight hover:text-sea-serpent transition-colors">Packages</a>
+                <a href="#team" class="text-midnight hover:text-sea-serpent transition-colors">Team</a>
+                <a href="#projects" class="text-midnight hover:text-sea-serpent transition-colors">Projects</a>
+                <a href="#contact" class="text-midnight hover:text-sea-serpent transition-colors">Contact</a>
+            </div>
+
+            <!-- Burger Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-midnight">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white/10 backdrop-blur-lg border-b border-white/20 shadow-lg">
+        <div class="flex flex-col items-center space-y-4 py-4">
+            <a href="#home" class="text-midnight hover:text-sea-serpent transition-colors">Home</a>
+            <a href="#services" class="text-midnight hover:text-sea-serpent transition-colors">Services</a>
+            <a href="#packages" class="text-midnight hover:text-sea-serpent transition-colors">Packages</a>
+            <a href="#team" class="text-midnight hover:text-sea-serpent transition-colors">Team</a>
+            <a href="#projects" class="text-midnight hover:text-sea-serpent transition-colors">Projects</a>
+            <a href="#contact" class="text-midnight hover:text-sea-serpent transition-colors">Contact</a>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+   <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative">
+    <div class="stripe stripe1"></div>
+    <div class="stripe stripe2"></div>
+    <div class="stripe stripe3"></div>
+    <div class="stripe stripe4"></div>
+
+    <div class="text-center text-white z-10">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Aratoz</h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">Modern Solutions for Tomorrow's Challenges</p>
+        <a href="#contact">
+    <button class="bg-white text-midnight px-8 py-4 rounded-full text-lg font-semibold hover:bg-bubbles hover:scale-105 transition-all duration-300 shadow-lg">
+        Get Started
+    </button>
+</a>
+
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 gradient-bg-alt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-midnight mb-4">Our Services</h2>
+                <p class="text-lg text-seaweed">Comprehensive solutions tailored to your needs</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="text-sea-serpent text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-3">Web Development</h3>
+                    <p class="text-seaweed">Modern, responsive websites built with cutting-edge technologies</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="text-sea-serpent text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-3">Mobile Apps</h3>
+                    <p class="text-seaweed">Native and cross-platform mobile applications</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="text-sea-serpent text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-3">Cloud Solutions</h3>
+                    <p class="text-seaweed">Scalable cloud infrastructure and deployment services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-midnight mb-4">Our Packages</h2>
+                <p class="text-lg text-seaweed">Choose the perfect plan for your business</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-bubbles to-non-photo-blue rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-midnight mb-4">Starter</h3>
+                    <div class="text-4xl font-bold text-sea-serpent mb-6">$99<span class="text-lg text-seaweed">/month</span></div>
+                    <ul class="space-y-3 text-midnight">
+                        <li><i class="fas fa-check text-sea-serpent mr-2"></i>Basic Website</li>
+                        <li><i class="fas fa-check text-sea-serpent mr-2"></i>Mobile Responsive</li>
+                        <li><i class="fas fa-check text-sea-serpent mr-2"></i>24/7 Support</li>
+                    </ul>
+                    <button class="w-full mt-8 bg-sea-serpent text-white py-3 rounded-lg hover:bg-seaweed transition-colors">Choose Plan</button>
+                </div>
+                <div class="bg-gradient-to-br from-sea-serpent to-seaweed rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-white">
+                    <h3 class="text-2xl font-bold mb-4">Professional</h3>
+                    <div class="text-4xl font-bold mb-6">$299<span class="text-lg opacity-80">/month</span></div>
+                    <ul class="space-y-3">
+                        <li><i class="fas fa-check mr-2"></i>Advanced Features</li>
+                        <li><i class="fas fa-check mr-2"></i>Custom Design</li>
+                        <li><i class="fas fa-check mr-2"></i>SEO Optimization</li>
+                        <li><i class="fas fa-check mr-2"></i>Analytics Dashboard</li>
+                    </ul>
+                    <button class="w-full mt-8 bg-white text-sea-serpent py-3 rounded-lg hover:bg-bubbles transition-colors">Choose Plan</button>
+                </div>
+                <div class="bg-gradient-to-br from-midnight to-eerie-black rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-white">
+                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-6">$599<span class="text-lg opacity-80">/month</span></div>
+                    <ul class="space-y-3">
+                        <li><i class="fas fa-check mr-2"></i>Everything in Pro</li>
+                        <li><i class="fas fa-check mr-2"></i>Custom Development</li>
+                        <li><i class="fas fa-check mr-2"></i>Priority Support</li>
+                        <li><i class="fas fa-check mr-2"></i>Dedicated Manager</li>
+                    </ul>
+                    <button class="w-full mt-8 bg-sea-serpent text-white py-3 rounded-lg hover:bg-non-photo-blue transition-colors">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+ <section id="team" class="py-20 gradient-bg-alt">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Title -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-midnight mb-4">Our Team</h2>
+            <p class="text-lg text-seaweed">Meet the experts behind Aratoz</p>
+        </div>
+
+        <!-- CEO & Founder -->
+        <div class="flex justify-center mb-12">
+            <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group w-64">
+                <div class="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                    <img src="team/ahsan.png" alt="Muhammad Ahsan" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-midnight mb-2">Muhammad Ahsan</h3>
+                <p class="text-seaweed text-sm">CEO & Founder</p>
+            </div>
+        </div>
+
+        <!-- Other Team Members -->
+        <div class="grid md:grid-cols-4 gap-8">
+
+            <!-- Member 1 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                    <img src="team/rauf.png" alt="Abdul Rauf" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-midnight mb-2">Abdul Rauf</h3>
+                <p class="text-seaweed text-sm">Lead Developer</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                    <img src="team/adil.png" alt="Muhammad Adil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-midnight mb-2">Muhammad Adil</h3>
+                <p class="text-seaweed text-sm">Social Media Manager</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                    <img src="team/umar.png" alt="Muhammad Umar" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-midnight mb-2">Muhammad Umar</h3>
+                <p class="text-seaweed text-sm">Video Editing Lead</p>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-md group-hover:scale-110 transition-transform">
+                    <img src="team/ali.png" alt="Ali" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-midnight mb-2">Shahzaib Ali</h3>
+                <p class="text-seaweed text-sm">Graphic Designer Expert</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-midnight mb-4">Our Projects</h2>
+                <p class="text-lg text-seaweed">Showcasing our latest work</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-bubbles to-non-photo-blue rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-sea-serpent to-seaweed flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-laptop-code text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-midnight mb-3">E-commerce Platform</h3>
+                        <p class="text-seaweed">Modern online shopping experience with advanced features</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-non-photo-blue to-sea-serpent rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-seaweed to-midnight flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-midnight mb-3">Mobile Banking App</h3>
+                        <p class="text-seaweed">Secure and user-friendly banking solution</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-sea-serpent to-seaweed rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-midnight to-eerie-black flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chart-line text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-midnight mb-3">Analytics Dashboard</h3>
+                        <p class="text-seaweed">Real-time data visualization and insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Web Apps Section -->
+<section class="py-16 bg-gradient-to-b from-[#E9FCFF] via-[#93E6EF] to-[#46CEE6] text-[#095764]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold mb-4">Our Web Apps</h2>
+    <p class="text-lg text-seaweed">
+      Explore our in-development and live projects — try them, support them, or collaborate to bring them to life.
+    </p>
+    <br>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Green Notes -->
+      <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden group border border-[#1A8499]/20 hover:scale-[1.02] transition-transform duration-300">
+        <span class="absolute top-3 left-3 bg-[#1A8499] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Beta</span>
+        <div class="absolute bottom-3 right-3 flex items-center space-x-2 bg-[#E9FCFF]/90 px-3 py-1 rounded-full backdrop-blur-sm border border-[#93E6EF]">
+          <img src="team/rauf.png" alt="Rauf" class="w-6 h-6 rounded-full border border-[#46CEE6]">
+        </div>
+        <img src="web_apps/greennote.png" alt="Green Notes Screenshot" class="w-full h-48 object-cover group-hover:opacity-90 transition">
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-bold text-[#095764] mb-2">Green Notes</h3>
+          <p class="text-[#1F1F1F]/70 text-sm mb-4">
+            Developed by our lead developer, it works like traditional note writing, enhanced with AI to correct grammar and refine your text.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://greennotes.vercel.app/" class="flex-1 bg-[#1A8499] text-white text-sm font-bold py-2 rounded-lg hover:bg-[#095764] transition">Try It</a>
+            <a href="#" class="flex-1 bg-[#46CEE6] text-[#095764] text-sm font-bold py-2 rounded-lg hover:bg-[#93E6EF] transition">Fund/Collaborate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idea2Prompt -->
+      <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden group border border-[#1A8499]/20 hover:scale-[1.02] transition-transform duration-300">
+        <span class="absolute top-3 left-3 bg-[#1A8499] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Beta</span>
+        <div class="absolute bottom-3 right-3 flex items-center space-x-2 bg-[#E9FCFF]/90 px-3 py-1 rounded-full backdrop-blur-sm border border-[#93E6EF]">
+          <img src="team/rauf.png" alt="Rauf" class="w-6 h-6 rounded-full border border-[#46CEE6]">
+        </div>
+        <img src="web_apps/idea.png" alt="Idea2Prompt Screenshot" class="w-full h-48 object-cover group-hover:opacity-90 transition">
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-bold text-[#095764] mb-2">Idea2Prompt</h3>
+          <p class="text-[#1F1F1F]/70 text-sm mb-4">
+            Developed by our lead developer, it’s an app that helps you turn your idea into a detailed prompt that any LLM or AI agent can easily understand.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://idea2prompt.vercel.app/" class="flex-1 bg-[#1A8499] text-white text-sm font-bold py-2 rounded-lg hover:bg-[#095764] transition">Try It</a>
+            <a href="#" class="flex-1 bg-[#46CEE6] text-[#095764] text-sm font-bold py-2 rounded-lg hover:bg-[#93E6EF] transition">Fund/Collaborate</a>
+          </div>
+        </div>
+      </div>
+    
+       <!-- Bookers -->
+       <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden group border border-[#1A8499]/20 hover:scale-[1.02] transition-transform duration-300">
+        <span class="absolute top-3 left-3 bg-[#1A8499] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Beta</span>
+        <div class="absolute bottom-3 right-3 flex items-center space-x-2 bg-[#E9FCFF]/90 px-3 py-1 rounded-full backdrop-blur-sm border border-[#93E6EF]">
+          <img src="team/rauf.png" alt="Rauf" class="w-6 h-6 rounded-full border border-[#46CEE6]">
+        </div>
+        <img src="web_apps/bookers.png" alt="Idea2Prompt Screenshot" class="w-full h-48 object-cover group-hover:opacity-90 transition">
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-bold text-[#095764] mb-2">Bookers</h3>
+          <p class="text-[#1F1F1F]/70 text-sm mb-4">
+            Developed by our lead developer, Bookers is a web app that helps you create a prototype of books based on the story or idea you have.
+
+          </p>
+          <div class="flex gap-3">
+            <a href="https://bookers-rauf.vercel.app/" class="flex-1 bg-[#1A8499] text-white text-sm font-bold py-2 rounded-lg hover:bg-[#095764] transition">Try It</a>
+            <a href="#" class="flex-1 bg-[#46CEE6] text-[#095764] text-sm font-bold py-2 rounded-lg hover:bg-[#93E6EF] transition">Fund/Collaborate</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Client Feedback Section -->
+    <section id="feedback" class="py-20 gradient-bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Client Feedback</h2>
+                <p class="text-lg text-non-photo-blue">What our clients say about us</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-white">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-sea-serpent to-seaweed rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alex Thompson</h4>
+                            <p class="text-non-photo-blue text-sm">Tech Startup CEO</p>
+                        </div>
+                    </div>
+                    <p class="text-bubbles">"Aratoz delivered an exceptional website that exceeded our expectations. Their attention to detail is remarkable."</p>
+                    <div class="flex text-sea-serpent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-white">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-non-photo-blue to-sea-serpent rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Maria Garcia</h4>
+                            <p class="text-non-photo-blue text-sm">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-bubbles">"Professional team with excellent communication. They transformed our digital presence completely."</p>
+                    <div class="flex text-sea-serpent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-white">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-seaweed to-midnight rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David Chen</h4>
+                            <p class="text-non-photo-blue text-sm">E-commerce Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-bubbles">"Our sales increased by 300% after launching the new platform. Highly recommend Aratoz!"</p>
+                    <div class="flex text-sea-serpent mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg-alt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-midnight mb-4">Get In Touch</h2>
+                <p class="text-lg text-seaweed">Ready to start your next project?</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-non-photo-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-sea-serpent">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border border-non-photo-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-sea-serpent">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full px-4 py-3 border border-non-photo-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-sea-serpent">
+                        <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 border border-non-photo-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-sea-serpent"></textarea>
+                        <button type="submit" class="w-full bg-gradient-to-r from-sea-serpent to-seaweed text-white py-3 rounded-lg hover:from-seaweed hover:to-midnight transition-all duration-300 font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="white_logo.png" alt="Aratoz Logo" class="w-8 h-8">
+                        <span class="text-2xl font-bold">Aratoz</span>
+                    </div>
+                    <p class="text-non-photo-blue">Modern solutions for tomorrow's challenges</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-non-photo-blue">
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">Mobile Apps</a></li>
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-non-photo-blue">
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-sea-serpent transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-non-photo-blue hover:text-sea-serpent transition-colors text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-non-photo-blue hover:text-sea-serpent transition-colors text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-non-photo-blue hover:text-sea-serpent transition-colors text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-seaweed mt-8 pt-8 text-center text-non-photo-blue">
+                <p>&copy; 2025 Aratoz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95');
+            } else {
+                nav.classList.remove('bg-white/95');
+            }
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("animate-slideDown");
+    });
+});
+    </script>
+</body>
+</html>
