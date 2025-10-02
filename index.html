@@ -140,8 +140,8 @@
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-white hover:text-lime-primary transition-colors">Home</a>
                 <a href="#services" class="text-white hover:text-lime-primary transition-colors">Services</a>
-                <a href="#packages" class="text-white hover:text-lime-primary transition-colors">Packages</a>
-                <a href="#team" class="text-white hover:text-lime-primary transition-colors">Team</a>
+                <!-- <a href="#packages" class="text-white hover:text-lime-primary transition-colors">Packages</a> -->
+                <a href="#team" class="text-white hover:text-lime-primary transition-colors">About</a>
                 <a href="#projects" class="text-white hover:text-lime-primary transition-colors">Projects</a>
                 <a href="#contact" class="text-white hover:text-lime-primary transition-colors">Contact</a>
             </div>
@@ -156,16 +156,17 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-24 left-0 w-full bg-black/20 backdrop-blur-lg border-b border-lime-primary/20 shadow-lg">
-        <div class="flex flex-col items-center space-y-4 py-4">
-            <a href="#home" class="text-white hover:text-lime-primary transition-colors">Home</a>
-            <a href="#services" class="text-white hover:text-lime-primary transition-colors">Services</a>
-            <a href="#packages" class="text-white hover:text-lime-primary transition-colors">Packages</a>
-            <a href="#team" class="text-white hover:text-lime-primary transition-colors">Team</a>
-            <a href="#projects" class="text-white hover:text-lime-primary transition-colors">Projects</a>
-            <a href="#contact" class="text-white hover:text-lime-primary transition-colors">Contact</a>
-        </div>
+    <div id="mobile-menu" class="hidden md:hidden absolute top-24 left-0 w-full bg-white border-b border-lime-primary/20 shadow-lg">
+    <div class="flex flex-col items-center space-y-4 py-4">
+        <a href="#home" class="text-black hover:text-lime-primary transition-colors">Home</a>
+        <a href="#services" class="text-black hover:text-lime-primary transition-colors">Services</a>
+        <!--<a href="#packages" class="text-black hover:text-lime-primary transition-colors">Packages</a> -->
+        <a href="#team" class="text-black hover:text-lime-primary transition-colors">About</a>
+        <a href="#projects" class="text-black hover:text-lime-primary transition-colors">Projects</a>
+        <a href="#contact" class="text-black hover:text-lime-primary transition-colors">Contact</a>
     </div>
+</div>
+
 </nav>
     <!-- Hero Section -->
 <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
@@ -520,62 +521,95 @@
         </div>
     </section>
 
-    <!-- Footer -->
-<footer class="bg-dark-primary py-12 border-t border-lime-primary/20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-8">
-            
-            <!-- Logo + Tagline -->
-            <div>
-                <div class="flex items-center mb-4">
-                    <a href="#home">
-                        <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-20 h-20 object-contain drop-shadow-xl">
-                    </a>
-                </div>
-                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
-                    We craft modern software & AI solutions that power innovation, growth, and the future.
-                </p>
-            </div>
+<!-- Footer -->
+<footer class="bg-dark-primary pt-16 pb-8 border-t border-lime-primary/20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid md:grid-cols-5 gap-12">
+      
+      <!-- Logo + Tagline -->
+      <div class="md:col-span-2">
+        <a href="#home" class="flex items-center mb-4">
+          <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-24 h-24 object-contain drop-shadow-xl">
+        </a>
+        <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+          We craft modern software & AI solutions that power innovation, growth, and the future.
+        </p>
 
-            <!-- Services -->
-            <div>
-                <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Web Development</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Mobile Apps</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Cloud Solutions</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Consulting</a></li>
-                </ul>
-            </div>
-
-            <!-- Company -->
-            <div>
-                <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">About Us</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Our Team</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Careers</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Legal -->
-            <div>
-                <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Privacy Policy</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Terms of Service</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Cookie Policy</a></li>
-                </ul>
-            </div>
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-6">
+          <a href="#" class="text-gray-400 hover:text-lime-primary transition">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-lime-primary transition">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-lime-primary transition">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-lime-primary transition">
+            <i class="fab fa-github text-xl"></i>
+          </a>
         </div>
+      </div>
 
-        <!-- Bottom -->
-        <div class="border-t border-lime-primary/20 mt-8 pt-8 text-center">
-            <p class="text-gray-300">&copy; 2025 Aratoz. All rights reserved.</p>
+      <!-- Services -->
+      <div class="md:col-span-2">
+        <h4 class="text-lg font-semibold text-white mb-4 border-b-2 border-lime-primary inline-block pb-1">
+          Services
+        </h4>
+        <div class="grid grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Web Development</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Mobile Apps</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Cloud Solutions</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Consulting</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Graphic Design</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Video Editing</a></li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Arduino & IoT</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">AI & ML</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">E-Commerce</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">SEO & Marketing</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Game Development</a></li>
+          </ul>
         </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-4 border-b-2 border-lime-primary inline-block pb-1">
+          Company
+        </h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">About Us</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Our Team</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Careers</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-4 border-b-2 border-lime-primary inline-block pb-1">
+          Legal
+        </h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-lime-primary transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-lime-primary/20 mt-12 pt-6 text-center">
+      <p class="text-gray-400 text-sm">&copy; 2025 Aratoz. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
+
 
 
     <script>
