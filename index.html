@@ -501,67 +501,106 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 gradient-bg-alt">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
-                <p class="text-lg text-lime-primary">Ready to start your next project?</p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+      <p class="text-lg text-lime-primary">Ready to start your next project?</p>
+    </div>
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-lime-primary text-xl mr-4"></i>
+              <span class="text-gray-300">aratoz777@gmail.com</span>
             </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <i class="fas fa-envelope text-lime-primary text-xl mr-4"></i>
-                                <span class="text-gray-300">aratoz777@gmail.com</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-phone text-lime-primary text-xl mr-4"></i>
-                                <span class="text-gray-300">+92 (327) 700-7580</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-map-marker-alt text-lime-primary text-xl mr-4"></i>
-                                <span class="text-gray-300">Nawabshah, Sindh, Pakistan</span>
-                            </div>
-                        </div>
-                        <div class="mt-8">
-                            <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
-                            <div class="flex space-x-4">
-                                <a href="https://www.facebook.com/share/176r8RSZfY/" class="text-lime-primary hover:text-lime-light transition-colors">
-                                    <i class="fab fa-facebook text-2xl"></i>
-                                </a>
-                                <a href="https://www.instagram.com/aratoz_agency?igsh=MW90YjdkNGc1dzlvaA==" class="text-lime-primary hover:text-lime-light transition-colors">
-                                    <i class="fab fa-instagram text-2xl"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/aratoz-agency-84388a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-lime-primary hover:text-lime-light transition-colors">
-                                    <i class="fab fa-linkedin-in text-2xl"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <form class="space-y-6">
-                            <div>
-                                <label class="block text-white text-sm font-medium mb-2">Name</label>
-                                <input type="text" class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors" placeholder="Your Name">
-                            </div>
-                            <div>
-                                <label class="block text-white text-sm font-medium mb-2">Email</label>
-                                <input type="email" class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors" placeholder="your@email.com">
-                            </div>
-                            <div>
-                                <label class="block text-white text-sm font-medium mb-2">Message</label>
-                                <textarea rows="4" class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors" placeholder="Tell us about your project..."></textarea>
-                            </div>
-                            <button type="submit" class="w-full gradient-lime text-black py-3 rounded-lg font-semibold hover:gradient-lime-dark transition-all duration-300">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone text-lime-primary text-xl mr-4"></i>
+              <span class="text-gray-300">+92 (327) 700-7580</span>
             </div>
+            <div class="flex items-center">
+              <i class="fas fa-map-marker-alt text-lime-primary text-xl mr-4"></i>
+              <span class="text-gray-300">Nawabshah, Sindh, Pakistan</span>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/share/176r8RSZfY/" class="text-lime-primary hover:text-lime-light transition-colors">
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a href="https://www.instagram.com/aratoz_agency?igsh=MW90YjdkNGc1dzlvaA==" class="text-lime-primary hover:text-lime-light transition-colors">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/aratoz-agency-84388a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-lime-primary hover:text-lime-light transition-colors">
+                <i class="fab fa-linkedin-in text-2xl"></i>
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Contact Form -->
+        <div>
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label class="block text-white text-sm font-medium mb-2">Name</label>
+              <input type="text" name="from_name" required
+                class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors"
+                placeholder="Your Name">
+            </div>
+            <div>
+              <label class="block text-white text-sm font-medium mb-2">Email</label>
+              <input type="email" name="from_email" required
+                class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors"
+                placeholder="your@email.com">
+            </div>
+            <div>
+              <label class="block text-white text-sm font-medium mb-2">Message</label>
+              <textarea name="message" rows="4" required
+                class="w-full px-4 py-3 bg-dark-secondary border border-lime-primary/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-lime-primary transition-colors"
+                placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit"
+              class="w-full gradient-lime text-black py-3 rounded-lg font-semibold hover:gradient-lime-dark transition-all duration-300">
+              Send Message
+            </button>
+          </form>
+
+          <!-- EmailJS Script -->
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          <script type="text/javascript">
+            (function () {
+              emailjs.init({
+                publicKey: "1-yKfC9qpQQzJhsJd",
+              });
+            })();
+
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+              event.preventDefault();
+
+              // add current time
+              const time = new Date().toLocaleString();
+              const formData = new FormData(this);
+              formData.append("time", time);
+
+              emailjs.sendForm("service_3mlr3y5", "template_2adz2bh", this)
+                .then(() => {
+                  alert("✅ Message sent successfully!");
+                  this.reset();
+                }, (error) => {
+                  alert("❌ Failed to send message. Please try again later.");
+                  console.error("Error:", error);
+                });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Footer -->
 <footer class="bg-dark-primary pt-16 pb-8 border-t border-lime-primary/20">
