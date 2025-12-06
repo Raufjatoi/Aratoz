@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing - Aratoz</title>
+    <link rel="icon" type="image/x-icon" href="logoA.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-primary': '#c6ff00',
+                        'lime-light': '#d4ff33',
+                        'lime-dark': '#9acc00',
+                        'dark-primary': '#000000',
+                        'dark-secondary': '#1a1a1a',
+                        'dark-tertiary': '#2d2d2d'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-primary text-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-lime-primary/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-24 h-24 object-contain">
+                </a>
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-lime-primary transition-colors font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header class="pt-40 pb-20 px-4 text-center bg-gradient-to-b from-dark-secondary to-dark-primary">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-green-600">
+            Video Editing
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Professional AI-enhanced video editing to captivate your audience.
+        </p>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white">Editor <span class="text-lime-primary">Rates</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Short Form -->
+                <div class="bg-dark-secondary border border-lime-primary/30 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 flex flex-col text-center">
+                    <div class="inline-block mx-auto mb-6 p-4 rounded-full bg-black/30 text-lime-primary">
+                        <i class="fab fa-tiktok text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Short Form</h3>
+                    <p class="text-gray-400 mb-4 h-12">Reels, TikToks, Shorts. Fast-paced and engaging.</p>
+                    <div class="text-5xl font-bold text-lime-primary mb-2">$20</div>
+                    <p class="text-sm text-gray-500 mb-8">per video</p>
+                    
+                    <a href="index.html#contact" class="mt-auto block w-full py-4 bg-transparent border-2 border-lime-primary text-lime-primary font-bold rounded-xl hover:bg-lime-primary hover:text-black transition-colors">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Long Form -->
+                <div class="bg-dark-secondary border border-lime-primary/30 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 flex flex-col text-center">
+                    <div class="inline-block mx-auto mb-6 p-4 rounded-full bg-black/30 text-lime-primary">
+                        <i class="fab fa-youtube text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Long Form</h3>
+                    <p class="text-gray-400 mb-4 h-12">YouTube videos, Explainers, Documentary style.</p>
+                    <div class="text-5xl font-bold text-lime-primary mb-2">$15</div>
+                    <p class="text-sm text-gray-500 mb-8">per minute</p>
+                    
+                    <a href="index.html#contact" class="mt-auto block w-full py-4 bg-transparent border-2 border-lime-primary text-lime-primary font-bold rounded-xl hover:bg-lime-primary hover:text-black transition-colors">
+                        Order Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-primary pt-8 pb-8 border-t border-lime-primary/20 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">&copy; 2025 Aratoz. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

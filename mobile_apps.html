@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Apps - Aratoz</title>
+    <link rel="icon" type="image/x-icon" href="logoA.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-primary': '#c6ff00',
+                        'lime-light': '#d4ff33',
+                        'lime-dark': '#9acc00',
+                        'dark-primary': '#000000',
+                        'dark-secondary': '#1a1a1a',
+                        'dark-tertiary': '#2d2d2d'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-primary text-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-lime-primary/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-24 h-24 object-contain">
+                </a>
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-lime-primary transition-colors font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header class="pt-40 pb-20 px-4 text-center bg-gradient-to-b from-dark-secondary to-dark-primary">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-green-600">
+            Mobile Apps
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Native and cross-platform mobile applications that users love.
+        </p>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white">Development <span class="text-lime-primary">Packages</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                
+                <!-- Basic App -->
+                <div class="bg-dark-secondary border border-lime-primary/30 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 transform hover:-translate-y-2 relative group">
+                    <div class="mb-6"><i class="fas fa-mobile text-5xl text-lime-primary"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Basic App</h3>
+                    <p class="text-gray-400 mb-6 h-12">Standard app with essential features (e.g., info, booking).</p>
+                    <div class="text-5xl font-bold text-lime-primary mb-2">Starts at $1,500</div>
+                    
+                    <ul class="space-y-4 mb-8 text-gray-300 mt-6">
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Cross-Platform (React Native/Flutter)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Basic UI/UX</li>
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Push Notifications</li>
+                    </ul>
+                    
+                    <a href="index.html#contact" class="block w-full py-4 text-center bg-transparent border-2 border-lime-primary text-lime-primary font-bold rounded-xl hover:bg-lime-primary hover:text-black transition-colors">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- Complex App -->
+                <div class="bg-gradient-to-br from-dark-secondary to-[#1f2d00] border border-lime-primary rounded-2xl p-8 hover:shadow-[0_0_40px_rgba(198,255,0,0.2)] transition-all duration-300 transform hover:-translate-y-2 relative">
+                    <div class="absolute top-0 right-0 bg-lime-primary text-black text-xs font-bold px-3 py-1 rounded-bl-lg">PRO</div>
+                    <div class="mb-6"><i class="fas fa-layer-group text-5xl text-lime-primary"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Complex App</h3>
+                    <p class="text-gray-400 mb-6 h-12">Feature-rich app with backend, realtime data, and more.</p>
+                    <div class="text-5xl font-bold text-lime-primary mb-2">Starts at $3,000</div>
+                    
+                    <ul class="space-y-4 mb-8 text-gray-300 mt-6">
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Native Performance</li>
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Advanced Backend & API</li>
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Real-time Features</li>
+                        <li class="flex items-center"><i class="fas fa-check text-lime-primary mr-3"></i> Admin Panel Included</li>
+                    </ul>
+                    
+                    <a href="index.html#contact" class="block w-full py-4 text-center bg-lime-primary text-black font-bold rounded-xl hover:bg-lime-dark transition-colors shadow-lg">
+                        Get Quote
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-primary pt-8 pb-8 border-t border-lime-primary/20 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">&copy; 2025 Aratoz. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

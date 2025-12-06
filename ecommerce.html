@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce - Aratoz</title>
+    <link rel="icon" type="image/x-icon" href="logoA.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-primary': '#c6ff00',
+                        'lime-light': '#d4ff33',
+                        'lime-dark': '#9acc00',
+                        'dark-primary': '#000000',
+                        'dark-secondary': '#1a1a1a',
+                        'dark-tertiary': '#2d2d2d'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-primary text-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-lime-primary/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-24 h-24 object-contain">
+                </a>
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-lime-primary transition-colors font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header class="pt-40 pb-20 px-4 text-center bg-gradient-to-b from-dark-secondary to-dark-primary">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-green-600">
+            E-Commerce
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Robust, scalable, and sales-focused online stores to grow your business.
+        </p>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white">Store <span class="text-lime-primary">Development</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Shopify Setup -->
+                <div class="bg-dark-secondary border border-lime-primary/30 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 flex flex-col text-center">
+                    <div class="mb-6"><i class="fab fa-shopify text-5xl text-lime-primary"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Shopify Setup</h3>
+                    <p class="text-gray-400 mb-6 h-12">Theme customization, product setup, and app integration.</p>
+                    <div class="text-4xl font-bold text-lime-primary mb-8">$800</div>
+                    
+                    <a href="index.html#contact" class="block w-full py-3 bg-transparent border-2 border-lime-primary text-lime-primary font-bold rounded-xl hover:bg-lime-primary hover:text-black transition-colors">
+                        Launch Store
+                    </a>
+                </div>
+
+                <!-- Custom Platform -->
+                <div class="bg-dark-secondary border border-lime-primary/30 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 flex flex-col text-center">
+                    <div class="mb-6"><i class="fas fa-shopping-bag text-5xl text-lime-primary"></i></div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Custom Platform</h3>
+                    <p class="text-gray-400 mb-6 h-12">MERN/Next.js store with full control and no monthly fees.</p>
+                    <div class="text-4xl font-bold text-lime-primary mb-8">Starts at $2,000</div>
+                    
+                    <a href="index.html#contact" class="block w-full py-3 bg-transparent border-2 border-lime-primary text-lime-primary font-bold rounded-xl hover:bg-lime-primary hover:text-black transition-colors">
+                        Get Quote
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-primary pt-8 pb-8 border-t border-lime-primary/20 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">&copy; 2025 Aratoz. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
