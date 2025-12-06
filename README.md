@@ -1,16 +1,7 @@
 <div align="center">
   <img src="logo_wo_bg.png" alt="Aratoz Logo" width="200" />
   <h1>Aratoz</h1>
-  <p><strong>Your Next-Gen AI Agency</strong></p>
-  
-  <p>
-    <a href="#about">About</a> •
-    <a href="#features">Features</a> •
-    <a href="#tech-stack">Tech Stack</a> •
-    <a href="#structure">Structure</a> •
-    <a href="#team">Team</a> •
-    <a href="#contact">Contact</a>
-  </p>
+  <p><strong>Your Next-Gen AI Agency</strong>
 </div>
 
 ---
