@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - Aratoz</title>
+    <link rel="icon" type="image/x-icon" href="logoA.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lime-primary': '#c6ff00',
+                        'lime-light': '#d4ff33',
+                        'lime-dark': '#9acc00',
+                        'dark-primary': '#000000',
+                        'dark-secondary': '#1a1a1a',
+                        'dark-tertiary': '#2d2d2d'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-primary text-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-lime-primary/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo_wo_bg.png" alt="Aratoz Logo" class="w-24 h-24 object-contain">
+                </a>
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-lime-primary transition-colors font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-4 text-center bg-gradient-to-b from-dark-secondary to-dark-primary">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-green-600">
+            Our Portfolio
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            A collection of our finest work, spanning web development, AI solutions, and creative design.
+        </p>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- CarX -->
+                <div class="bg-dark-secondary rounded-2xl overflow-hidden shadow-lg border border-lime-primary/20 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="work/Carx Main.webp" alt="CarX Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="carx.html" class="px-6 py-2 bg-lime-primary text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">CarX</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Sleek car dealer website with secure auth and modern UI.</p>
+                        <a href="carx.html" class="text-lime-primary font-bold hover:text-lime-light transition-colors">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- MedSpa Finder -->
+                <div class="bg-dark-secondary rounded-2xl overflow-hidden shadow-lg border border-lime-primary/20 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="work/MedSpa Finder main.webp" alt="MedSpa Finder Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="medspa.html" class="px-6 py-2 bg-lime-primary text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">MedSpa Finder</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Pixel-perfect Figma to Website clone optimized for SEO.</p>
+                        <a href="medspa.html" class="text-lime-primary font-bold hover:text-lime-light transition-colors">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- AI Product Shooting -->
+                <div class="bg-dark-secondary rounded-2xl overflow-hidden shadow-lg border border-lime-primary/20 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 bg-dark-tertiary flex items-center justify-center overflow-hidden group-hover:bg-dark-secondary transition-colors">
+                        <i class="fas fa-video text-6xl text-lime-primary opacity-50 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-110 transform"></i>
+                        <div class="absolute bottom-4 right-4 bg-lime-primary text-black text-xs font-bold px-3 py-1 rounded-full">Coming Soon</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">AI Product Shooting</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            Revolutionary product videography powered by AI. High-quality, cinematic product showcases generated tailored to your brand.
+                        </p>
+                        <span class="text-gray-500 italic">Video demo coming soon...</span>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Portfolio -->
+                <div class="bg-dark-secondary rounded-2xl overflow-hidden shadow-lg border border-lime-primary/20 hover:shadow-[0_0_30px_rgba(198,255,0,0.1)] transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 bg-dark-tertiary flex items-center justify-center overflow-hidden group-hover:bg-dark-secondary transition-colors">
+                        <i class="fas fa-palette text-6xl text-lime-primary opacity-50 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-110 transform"></i>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Graphic Design Suite</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            A curated collection of impactful brand identities, social media creatives, and marketing materials designed to convert.
+                        </p>
+                        <a href="graphic_design.html" class="text-lime-primary font-bold hover:text-lime-light transition-colors">View Services <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-primary pt-8 pb-8 border-t border-lime-primary/20 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+             <p class="text-gray-400 text-sm">&copy; 2025 Aratoz. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
